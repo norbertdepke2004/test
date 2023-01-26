@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <title> Kurs HTML i CSS </title>
+    <link rel="stylesheet" type="text/css" href="style6.css" />
+    <link rel="icon" href="images/favicon.ico"/> <!-- Dodawanie favickonu do karty -->
+    <meta name="description" content="Kurs YouTube" />
+    <meta name="keywords" content="kurs, html" />
+    <meta name="autor" content="Norbert Depke" />
+</head>
+
+<body>
+    <div id="container">
+        <header id="header"><span id="title">Kurs HTML i CSS</span></header>
+        <nav id="navbar">
+            <a href="test1.html">cienie, krycie, gradienty i inne style CSS</a>
+            <a href="test2.html">Flex-box, wstęp do RWD</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+        <main id="main">
+            <article id="content">
+                <section>
+                    <p id="akapit1"><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Scelerisque felis imperdiet proin fermentum leo vel
+                    orci porta. Congue mauris rhoncus aenean vel elit scelerisque. Bibendum arcu vitae elementum
+                    curabitur. In dictum non consectetur a. Nec ullamcorper sit amet risus. Eget duis at tellus at urna
+                    condimentum. Consequat id porta nibh venenatis cras. Eget mauris pharetra et ultrices neque. Non
+                    pulvinar neque laoreet suspendisse interdum.</q></p>
+                </section>
+                <section>
+                    <p id="akapit2"> facilisi morbi tempus iaculis. Mauris pellentesque pulvinar pellentesque habitant morbi
+                    tristique. Ipsum dolor sit amet consectetur adipiscing elit. Malesuada fames ac turpis egestas sed
+                    tempus. Convallis a cras semper auctor neque vitae tempus. Nunc sed velit dignissim sodales ut eu
+                    sem. Aenean euismod elementum nisi quis. Iaculis urna id volutpat lacus. Venenatis lectus magna
+                    fringilla urna. Semper quis lectus nulla at volutpat. Enim eu turpis egestas pretium aenean
+                    pharetra. Mauris augue neque gravida in fermentum et sollicitudin. Auctor neque vitae tempus quam
+                    pellentesque nec nam. Penatibus et magnis dis parturient montes nascetur ridiculus mus. Gravida
+                    dictum fusce ut placerat orci nulla pellentesque dignissim. Massa massa ultricies mi quis hendrerit
+                    dolor magna eget.</p>
+                </section>
+            </article>
+            <aside id="sidemenu">
+                <ul>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+        </main>
+        <footer id="footer">
+            <span>Wszelkie prawa zastrzeżone!</span><br><br>
+            <span>Kontakt:</span>
+
+            <!-- Budowanie formularza kontaktowego strony -->
+            <form action="" method="get">
+                <p>Text: <input type="text" name="nazwa" value="Norbert Depke" size="20" maxlength="10"> </p>
+                <p>Email: <input type="email" name="email" required><!-- required - Oznacza że pole jest wymagane do wypełnienia--> </p>
+                <p>Password: <input type="password" name="password" placeholder="Podaj hasło"> </p>
+                <p>Number: <input type="number" name="number" size="20" maxlength="10"> </p>
+                <p>Date: <input type="date" name="date"> </p>
+                
+                <p>Płeć: </p>
+                <p><label><input type="radio" name="plec" value="kobieta" checked="checked">kobieta</label></p> <!-- label - aby napis również był przyciskiem -->
+                <p><label><input type="radio" name="plec" value="mężczyzna" checked="checked">mężczyzna</label></p>
+                
+                <p>Języki programowania: </p>
+                <p><label><input type="checkbox" name="jezyk" value="C">C</label></p>
+                <p><label><input type="checkbox" name="jezyk" value="Java">Java</label></p>
+                <p><label><input type="checkbox" name="jezyk" value="Python">Python</label></p>
+               
+                <p>
+                    <select name="nazwa" size="1" multiple="multiple"> <!-- Tworrzenie listy rozwijanej wyboru, multiple - zaznaczanie kilka opcji na raz -->
+                        <optgroup label="Sekcja 1"> <!-- Dzielenie listy na grupy -->
+                            <option selected="selected">1 opcja</option> <!-- selected - aby ta konkretna opcja była jako 1 zaznaczona-->
+                            <option>2 opcja</option>
+                        </optgroup>
+                        <optgroup label="Sekcja 2">
+                            <option>3 opcja</option>
+                            <option>4 opcja</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <textarea name="nazwa" rows="10" cols="40" placeholder="Wpisz tekst"></textarea> <!-- Pole dużego polu tekstowego -->
+            
+                <p>
+                    <input type="submit" value="Wyślij">
+                    <input type="reset" value="Reset">
+                </p>
+
+            </form>
+            <!-- Koniec budowania formularza -->
+
+        </footer>
+    </div>
+</body>
+
+</html>
